@@ -2,28 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+body{
+  background-color: var(--white);
+}
+:root{
+  --font-family: 'Lexend';
+  --header: 2.5rem;
+  --subheader: 1.5625rem;
+  --padding: 2rem;
+  --border-radius: 20px;
+
+  --black:#071E22;
+  --white:#FBF7F5;
+  --teal:#1D7874;
+  --pink:#F6B7CC;
+  --yellow:#FFCB77;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+body{
+  margin: 0;
+  padding: 0;
 }
 
 @layer utilities {

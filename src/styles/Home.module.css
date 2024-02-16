@@ -1,0 +1,39 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300vh;
+    color: var(--white);
+    padding: var(--padding);
+}
+
+.tagline{
+    font-size: var(--header);
+    font-weight: 400;
+    color: var(--black);
+    line-height: 50px;
+}
+
+.ctaBtns{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 2rem;
+}
+
+.beforeFold{
+    display: flex;
+    flex-direction: column;
+}
+
+.foldContent{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.taglineCta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
