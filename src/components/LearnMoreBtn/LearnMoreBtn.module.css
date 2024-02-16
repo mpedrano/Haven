@@ -1,0 +1,15 @@
+.btn {
+    width: 250px;
+    height: 80px;
+    border-radius: var(--border-radius);
+    border: var(--black) solid 1px;
+    color: var(--black);
+    transition: background-color 0.3s ease; 
+    font-size: 30px;
+    font-weight: 300;
+  }
+  
+  .btn:hover {
+    background-color: var(--pink);
+  }
+  
