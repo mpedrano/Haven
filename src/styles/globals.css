@@ -5,8 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 body{
+  font-family: 'Lexend';
   background-color: var(--white);
 }
+
 :root{
   --font-family: 'Lexend';
   --header: 2.5rem;
