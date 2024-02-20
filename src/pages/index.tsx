@@ -3,6 +3,8 @@ import LearnMoreBtn from "@/components/LearnMoreBtn";
 import Head from "next/head";
 import Image from "next/image";
 import styles from '@/styles/Home.module.css'
+import SeeMoreBtn from "@/components/seeMoreBtn";
+import FeatPetCard from "@/components/featPetCard";
 
 export default function Home() {
   return (
@@ -33,6 +35,45 @@ export default function Home() {
         </div>
       </div>
 
+      
+      <div className={styles.volunteerContainer}>
+        <div className={styles.volunteerImgs}>
+          <Image
+            src="/assets/browndog.svg"
+            alt="a vector of a cute brown fluffy dog"
+            width={169}
+            height={211}
+          />
+          <Image
+            className={styles.volunteerThumb}
+            src="/assets/volunteerthumbnail.jpeg"
+            alt="volunteer holding dog"
+            width={358}
+            height={380}
+          />
+        </div>
+        <div className={styles.aboutContainer}>
+          <h1 className={styles.aboutHeader}>Helping Homeless Animals <br/>Find a New Home</h1>
+          <p className={styles.about}>Here at Haven, we provide the basic necessities that every animal deserves, such as food, water, and shelter. We are a dedicated non-profit organization helping animals that are seeking for a safe, new family.</p>
+        </div>
+      </div>
+
+      <div className={styles.featuredPetsContainer}>
+      <div className={styles.featHeader}>
+        <h1 className={styles.featuredPets}>Find Your New Best Friend 🐾</h1>
+        <SeeMoreBtn />
+      </div>
+      <div className={styles.featuredPetsGrid}>
+        <FeatPetCard />
+        <FeatPetCard />
+        <FeatPetCard />
+        <FeatPetCard />
+        <FeatPetCard />
+        <FeatPetCard />
+        <FeatPetCard />
+        <FeatPetCard />
+      </div>
+    </div>
     </main>
   );
 }
