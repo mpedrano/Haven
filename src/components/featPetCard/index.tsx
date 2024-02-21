@@ -8,7 +8,7 @@ export default function FeatPetCard() {
     const [loading, setLoading] = useState<boolean>(true);
 
     useEffect(() => {
-        const apiKey = process.env.NEXT_PUBLIC_PETFINDER_API;
+        const apiKey = process.env.NEXT_PUBLIC_API;
         const accessToken = process.env.NEXT_PUBLIC_ACCESS_TOKEN;
         const totalPages = 100;
 
