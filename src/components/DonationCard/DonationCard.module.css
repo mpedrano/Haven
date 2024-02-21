@@ -1,0 +1,72 @@
+.container {
+    background-color: white;
+    padding: 3rem;
+    width: 30rem;
+    height: 32rem;
+    border-radius: 15px;
+    color: black;
+}
+
+.tabcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 2rem;
+    width: 24rem;
+    height: 24rem;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 3rem;
+    color: var(--teal)
+}
+
+.label {
+    padding-bottom: 1rem;
+}
+
+.frequency {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.button {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+.button:hover {
+    background-color: var(--yellow);
+}
+
+.active {
+    background-color: var(--yellow);
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.next,
+.back,
+.donate {
+    color: var(--white);
+    background-color: var(--teal);
+    border: 1px solid var(--teal);
+    border-radius: 10px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    width: 6rem;
+}
