@@ -12,7 +12,7 @@ export default function DonationCard() {
     const [lastName, setLastName] = useState<string>("");
     const [email, setEmail] = useState<string>("");
 
-    const apiKey = process.env.NEXT_PUBLIC_API;
+    const apiKey = process.env.NEXT_PUBLIC_CHARITY_API;
     const url = `https://partners.every.org/v0.2/browse/animals?apiKey=${apiKey}`;
 
     useEffect(() => {
