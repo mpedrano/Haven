@@ -5,3 +5,9 @@ interface IDog {
     location: string;
     image: string;
 }
+
+interface INonprofit {
+    ein: string;
+    name: string;
+    description: string;
+}
