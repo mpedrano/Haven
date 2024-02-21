@@ -63,16 +63,7 @@ export default function Home() {
         <h1 className={styles.featuredPets}>Find Your New Best Friend 🐾</h1>
         <SeeMoreBtn />
       </div>
-      <div className={styles.featuredPetsGrid}>
         <FeatPetCard />
-        <FeatPetCard />
-        <FeatPetCard />
-        <FeatPetCard />
-        <FeatPetCard />
-        <FeatPetCard />
-        <FeatPetCard />
-        <FeatPetCard />
-      </div>
     </div>
     </main>
   );
