@@ -8,9 +8,9 @@ export default function FeatPetCard() {
     const [loading, setLoading] = useState<boolean>(true);
 
     useEffect(() => {
-        const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+        const apiKey = process.env.NEXT_PUBLIC_PETFINDER_API;
         const accessToken = process.env.NEXT_PUBLIC_ACCESS_TOKEN;
-        const totalPages = 100; 
+        const totalPages = 100;
 
         const fetchDogs = async () => {
             try {
@@ -47,7 +47,7 @@ export default function FeatPetCard() {
 
     return (
         <div className={styles.featuredPetsGrid}>
-            {!loading && 
+            {!loading &&
                 dogs.map((dog, index) => (
                     <div key={index} className={`card ${styles.card} bg-white shadow-l`}>
                         <figure>
