@@ -1,0 +1,42 @@
+.container {
+    margin: 0;
+    background-color: var(--white);
+    width: 100%;
+    border: 0;
+    height: 9.063rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.animals {
+    color: var(--black);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 200;
+    margin-right: 3.375rem;
+}
+
+.adoption {
+    color: var(--black);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 200;
+    margin-right: 3.375rem;
+}
+
+.resources {
+    color: var(--black);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 200;
+}
