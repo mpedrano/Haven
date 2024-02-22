@@ -1,7 +1,7 @@
 .container {
     margin: 0;
     background-color: var(--white);
-    width: 100%;
+    width: auto;
     border: 0;
     height: 9.063rem;
     display: flex;

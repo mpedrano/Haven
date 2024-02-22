@@ -18,60 +18,62 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/haven-favi.svg" />
       </Head>
+      <div className={styles.container}>
+        <div className={styles.beforeFold}>
+          <div className={styles.header}>
+            <Header /></div>
+          <div className={styles.foldContent}>
 
-      <div className={styles.beforeFold}>
-        <div className={styles.header}>
-          <Header /></div>
-        <div className={styles.foldContent}>
-
-          <div className={styles.taglineCta}>
-            <h1 className={styles.tagline}>Find Haven in Every Paw —<br />Every Heart Deserves a Home.</h1>
-            <div className={styles.ctaBtns}>
-              <LearnMoreBtn />
-              <AdoptBtn />
+            <div className={styles.taglineCta}>
+              <h1 className={styles.tagline}>Find Haven in Every Paw —<br />Every Heart Deserves a Home.</h1>
+              <div className={styles.ctaBtns}>
+                <LearnMoreBtn />
+                <AdoptBtn />
+              </div>
             </div>
+            <Image
+              src="/assets/headericons.svg"
+              alt="haven vectors"
+              width={550}
+              height={650}
+            />
           </div>
-          <Image
-            src="/assets/headericons.svg"
-            alt="haven vectors"
-            width={550}
-            height={650}
-          />
         </div>
-      </div>
 
 
-      <div className={styles.volunteerContainer}>
-        <div className={styles.volunteerImgs}>
-          <Image
-            src="/assets/browndog.svg"
-            alt="a vector of a cute brown fluffy dog"
-            width={169}
-            height={211}
-          />
-          <Image
-            className={styles.volunteerThumb}
-            src="/assets/volunteerthumbnail.jpeg"
-            alt="volunteer holding dog"
-            width={358}
-            height={380}
-          />
+        <div className={styles.volunteerContainer}>
+          <div className={styles.volunteerImgs}>
+            <Image
+              src="/assets/browndog.svg"
+              alt="a vector of a cute brown fluffy dog"
+              width={169}
+              height={211}
+            />
+            <Image
+              className={styles.volunteerThumb}
+              src="/assets/volunteerthumbnail.jpeg"
+              alt="volunteer holding dog"
+              width={358}
+              height={380}
+            />
+          </div>
+          <div className={styles.aboutContainer}>
+            <h1 className={styles.aboutHeader}>Helping Homeless Animals <br />Find a New Home</h1>
+            <p className={styles.about}>Here at Haven, we provide the basic necessities that every animal deserves, such as food, water, and shelter. We are a dedicated non-profit organization helping animals that are seeking for a safe, new family.</p>
+          </div>
         </div>
-        <div className={styles.aboutContainer}>
-          <h1 className={styles.aboutHeader}>Helping Homeless Animals <br />Find a New Home</h1>
-          <p className={styles.about}>Here at Haven, we provide the basic necessities that every animal deserves, such as food, water, and shelter. We are a dedicated non-profit organization helping animals that are seeking for a safe, new family.</p>
-        </div>
-      </div>
 
-      <div className={styles.featuredPetsContainer}>
-        <div className={styles.featHeader}>
-          <h1 className={styles.featuredPets}>Find Your New Best Friend 🐾</h1>
-          <SeeMoreBtn />
+        <div className={styles.featuredPetsContainer}>
+          <div className={styles.featHeader}>
+            <h1 className={styles.featuredPets}>Find Your New Best Friend 🐾</h1>
+            <SeeMoreBtn />
+          </div>
+          <FeatPetCard />
+
         </div>
-        <FeatPetCard />
-      </div>
-      <div className={styles.footer}>
-        <Footer />
+        <div className={styles.footer}>
+          <Footer />
+        </div>
       </div>
     </main>
   );

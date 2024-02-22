@@ -7,7 +7,13 @@
     align-items: center;
     min-height: auto;
     color: var(--white);
-    padding: var(--padding);
+
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.container {
+    width: 100%;
 }
 
 .header {
@@ -16,10 +22,7 @@
 
 }
 
-.footer {
-    bottom: 0;
-    margin: 0;
-}
+
 
 .tagline {
     font-size: var(--header);
@@ -38,6 +41,8 @@
 .beforeFold {
     display: flex;
     flex-direction: column;
+    padding: var(--padding);
+    padding-top: 0;
 }
 
 .foldContent {
