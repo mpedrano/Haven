@@ -1,5 +1,12 @@
 import styles from '@/styles/Resources.module.css'
 import Head from "next/head";
+import Header from "@/components/Header";
+import DonationResourcesCard from "@/components/DonationResourcesCard";
+import AnimalCareResourcesCard from '@/components/AnimalCareResourcesCard';
+import AdoptionResourcesCard from '@/components/AdoptionResourcesCard';
+import LostSurrenderedResourcesCard from '@/components/LostSurrenderedResourcesCard';
+import Footer from "@/components/Footer";
+
 
 
 export default function Resources() {
@@ -14,6 +21,19 @@ export default function Resources() {
             </Head>
 
             <main className={styles.main}>
+                <div className={styles.header}>
+                    <Header />
+                </div>
+                <div className={styles.cards}>
+                    <DonationResourcesCard />
+                    <AnimalCareResourcesCard />
+                    <AdoptionResourcesCard />
+                    <LostSurrenderedResourcesCard />
+                </div>
+                <div className={styles.footer}>
+                    <Footer />
+                </div>
+                        
 
             </main>
         </>
