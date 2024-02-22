@@ -1,0 +1,9 @@
+.main {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+    color: var(--white);
+    padding: var(--padding);
+}

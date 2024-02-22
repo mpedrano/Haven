@@ -4,26 +4,26 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
-body{
+body {
   font-family: 'Lexend';
   background-color: var(--white);
 }
 
-:root{
+:root {
   --font-family: 'Lexend';
   --header: 2.5rem;
   --subheader: 1.5625rem;
   --padding: 2rem;
   --border-radius: 20px;
 
-  --black:#071E22;
-  --white:#FBF7F5;
-  --teal:#1D7874;
-  --pink:#F6B7CC;
-  --yellow:#FFCB77;
+  --black: #071E22;
+  --white: #FBF7F5;
+  --teal: #1D7874;
+  --pink: #F6B7CC;
+  --yellow: #FFCB77;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
 }
