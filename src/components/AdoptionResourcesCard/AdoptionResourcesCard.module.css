@@ -1,0 +1,29 @@
+.card {
+    width: 25rem;
+    height: 12rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.cardBody {
+    padding: 20px;
+}
+
+.cardTitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--teal);
+}
+
+.details {
+    color: var(--black);
+
+}
+
+.bottom {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 2rem;
+}

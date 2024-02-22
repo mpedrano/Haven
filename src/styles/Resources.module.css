@@ -7,3 +7,16 @@
     color: var(--white);
     padding: var(--padding);
 }
+
+.header {
+    position: sticky;
+    top: 0;
+
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding-top: 5rem;
+}
