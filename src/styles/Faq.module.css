@@ -1,0 +1,29 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.header,
+.headerIcons,
+.footer {
+    margin: 20px;
+}
+
+.accordion {
+    padding-top: 10rem;
+    padding-left: 20rem;
+}
+
+.title {
+    color: var(--teal);
+    font-size: 1.5rem;
+}
+
+.faqInfo {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
