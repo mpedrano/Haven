@@ -6,6 +6,8 @@ import AnimalCareResourcesCard from '@/components/AnimalCareResourcesCard';
 import AdoptionResourcesCard from '@/components/AdoptionResourcesCard';
 import LostSurrenderedResourcesCard from '@/components/LostSurrenderedResourcesCard';
 import Footer from "@/components/Footer";
+import Image from "next/image";
+
 
 
 
@@ -23,6 +25,24 @@ export default function Resources() {
             <main className={styles.main}>
                 <div className={styles.header}>
                     <Header />
+                </div>
+                <div className={styles.top}>
+                    <div className={styles.pug}> 
+                        <Image
+                            src="/assets/Pug.svg"
+                            alt="a vector of a pug"
+                            width={100}
+                            height={150}
+                        />
+                    </div>
+                    <div className={styles.info}>
+                        <div className={styles.title}>
+                            <h1>Explore our Resources</h1>
+                        </div>
+                        <div className={styles.desc}>
+                            <p>We give resources to help provide a safe haven for animals.</p>
+                        </div>
+                    </div>
                 </div>
                 <div className={styles.cards}>
                     <DonationResourcesCard />
