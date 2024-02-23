@@ -1,0 +1,11 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 10px;
+    color: var(--black);
+    background-color: var(--yellow);
+    width: 20rem;
+    height: 3rem;
+}
