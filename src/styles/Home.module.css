@@ -12,16 +12,11 @@
     padding-top: 0;
 }
 
-.container {
-    width: 100%;
-}
-
 .header {
     position: sticky;
     top: 0;
 
 }
-
 
 
 .tagline {
@@ -135,4 +130,78 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     row-gap: 40px;
+}
+
+
+/* support section */
+
+
+.supportHeader {
+    font-size: var(--header);
+    font-weight: 400;
+    line-height: 50px;
+    color: var(--teal);
+}
+
+.supportContainer {
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+    gap: 36px;
+    justify-content: center;
+}
+
+.volunteer2Container {
+        display: flex;
+    width: 68rem;
+    height: 50rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+}
+
+
+.supportImgs {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.supportThumb {
+    width: 358px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.support {
+    font-size: var(--subheader);
+    font-weight: 300;
+    line-height: 31.25px;
+    color: var(--black);
+}
+
+.supportDog{
+    margin-right:-40px;
+}
+
+.featResourceContainer{
+    display: flex;
+    flex-direction: column;
+    width: 68rem;
+}
+
+.featResourceCard{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.featResourceHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
 }
