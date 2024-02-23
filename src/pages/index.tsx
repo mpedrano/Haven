@@ -7,6 +7,7 @@ import SeeMoreBtn from "@/components/seeMoreBtn";
 import FeatPetCard from "@/components/featPetCard";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FeatResourceCard from "@/components/FeatResourceCard";
 
 export default function Home() {
   return (
@@ -18,11 +19,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/haven-favi.svg" />
       </Head>
-      <div className={styles.container}>
         <div className={styles.beforeFold}>
-          <header className={styles.header}>
-            <Header />
-          </header>
+          <div className={styles.header}>
+            <Header /></div>
           <div className={styles.foldContent}>
 
             <div className={styles.taglineCta}>
@@ -54,8 +53,8 @@ export default function Home() {
               className={styles.volunteerThumb}
               src="/assets/volunteerthumbnail.jpeg"
               alt="volunteer holding dog"
-              width={358}
-              height={380}
+              width={169}
+              height={211}
             />
           </div>
           <div className={styles.aboutContainer}>
@@ -70,12 +69,46 @@ export default function Home() {
             <SeeMoreBtn />
           </div>
           <FeatPetCard />
-
         </div>
-        <footer className={styles.footer}>
+
+        <div className={styles.volunteer2Container}>
+          <div className={styles.supportContainer}>
+            <h1 className={styles.supportHeader}>Support Our Cause: Giving<br/>Hope, One Paw at a Time.</h1>
+            <p className={styles.support}>Your donations help provide vital essentials for the animals at Haven, ensuring they receive the love, care, and support they need. With your help, we can create a haven of comfort, warmth, and well—being for our cuddly friends awaiting their future homes.</p>
+          </div>
+          <div className={styles.supportImgs}>
+            <Image
+              className={styles.supportThumb}
+              src="/assets/volunteerimg2.jpeg"
+              alt="volunteer holding dog"
+              width={358}
+              height={380}
+            />
+            <Image
+              className={styles.supportDog}
+              src="/assets/dogvector.svg"
+              alt="a vector of a cute brown fluffy dog"
+              width={217}
+              height={121}
+            />
+          </div>
+        </div>
+
+      <div className={styles.featResourceContainer}>
+          <div className={styles.featResourceHeader}>
+            <h1 className={styles.featuredPets}>Discover more tips and resources below!</h1>
+            <SeeMoreBtn />
+          </div>
+          <div className={styles.featResourceCard}>
+          <FeatResourceCard/>
+          <FeatResourceCard/>
+          <FeatResourceCard/>
+          </div>
+        </div>
+
+        <div className={styles.footer}>
           <Footer />
-        </footer>
-      </div>
+        </div>
     </main>
   );
 }

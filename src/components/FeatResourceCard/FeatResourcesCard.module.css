@@ -1,0 +1,44 @@
+
+.cardTitle {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    color: var(--teal); 
+}
+
+.cardHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--black);
+}
+
+.card{
+    width: 345px;
+    height: 390px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.desc{
+    font-size: 13px;
+    line-height: 16.25px;
+    font-weight: 250;
+}
+
+.cardBody {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    color: var(--black);
+    font-family: var(--font-family);
+}
+
+.badges{
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    color: var(--teal);
+}
