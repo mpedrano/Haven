@@ -20,8 +20,9 @@ export default function Home() {
       </Head>
       <div className={styles.container}>
         <div className={styles.beforeFold}>
-          <div className={styles.header}>
-            <Header /></div>
+          <header className={styles.header}>
+            <Header />
+          </header>
           <div className={styles.foldContent}>
 
             <div className={styles.taglineCta}>
@@ -71,9 +72,9 @@ export default function Home() {
           <FeatPetCard />
 
         </div>
-        <div className={styles.footer}>
+        <footer className={styles.footer}>
           <Footer />
-        </div>
+        </footer>
       </div>
     </main>
   );
