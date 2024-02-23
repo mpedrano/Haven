@@ -19,96 +19,97 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/haven-favi.svg" />
       </Head>
-        <div className={styles.beforeFold}>
-          <div className={styles.header}>
-            <Header /></div>
-          <div className={styles.foldContent}>
+      <div className={styles.beforeFold}>
+        <header className={styles.header}>
+          <Header />
+        </header>
+        <div className={styles.foldContent}>
 
-            <div className={styles.taglineCta}>
-              <h1 className={styles.tagline}>Find Haven in Every Paw —<br />Every Heart Deserves a Home.</h1>
-              <div className={styles.ctaBtns}>
-                <LearnMoreBtn />
-                <AdoptBtn />
-              </div>
+          <div className={styles.taglineCta}>
+            <h1 className={styles.tagline}>Find Haven in Every Paw —<br />Every Heart Deserves a Home.</h1>
+            <div className={styles.ctaBtns}>
+              <LearnMoreBtn />
+              <AdoptBtn />
             </div>
-            <Image
-              src="/assets/headericons.svg"
-              alt="haven vectors"
-              width={550}
-              height={650}
-            />
           </div>
+          <Image
+            src="/assets/headericons.svg"
+            alt="haven vectors"
+            width={550}
+            height={650}
+          />
         </div>
+      </div>
 
 
-        <div className={styles.volunteerContainer}>
-          <div className={styles.volunteerImgs}>
-            <Image
-              src="/assets/browndog.svg"
-              alt="a vector of a cute brown fluffy dog"
-              width={169}
-              height={211}
-            />
-            <Image
-              className={styles.volunteerThumb}
-              src="/assets/volunteerthumbnail.jpeg"
-              alt="volunteer holding dog"
-              width={169}
-              height={211}
-            />
-          </div>
-          <div className={styles.aboutContainer}>
-            <h1 className={styles.aboutHeader}>Helping Homeless Animals <br />Find a New Home</h1>
-            <p className={styles.about}>Here at Haven, we provide the basic necessities that every animal deserves, such as food, water, and shelter. We are a dedicated non-profit organization helping animals that are seeking for a safe, new family.</p>
-          </div>
+      <div className={styles.volunteerContainer}>
+        <div className={styles.volunteerImgs}>
+          <Image
+            src="/assets/browndog.svg"
+            alt="a vector of a cute brown fluffy dog"
+            width={169}
+            height={211}
+          />
+          <Image
+            className={styles.volunteerThumb}
+            src="/assets/volunteerthumbnail.jpeg"
+            alt="volunteer holding dog"
+            width={169}
+            height={211}
+          />
         </div>
+        <div className={styles.aboutContainer}>
+          <h1 className={styles.aboutHeader}>Helping Homeless Animals <br />Find a New Home</h1>
+          <p className={styles.about}>Here at Haven, we provide the basic necessities that every animal deserves, such as food, water, and shelter. We are a dedicated non-profit organization helping animals that are seeking for a safe, new family.</p>
+        </div>
+      </div>
 
-        <div className={styles.featuredPetsContainer}>
-          <div className={styles.featHeader}>
-            <h1 className={styles.featuredPets}>Find Your New Best Friend 🐾</h1>
-            <SeeMoreBtn />
-          </div>
-          <FeatPetCard />
+      <div className={styles.featuredPetsContainer}>
+        <div className={styles.featHeader}>
+          <h1 className={styles.featuredPets}>Find Your New Best Friend 🐾</h1>
+          <SeeMoreBtn />
         </div>
+        <FeatPetCard />
+      </div>
 
-        <div className={styles.volunteer2Container}>
-          <div className={styles.supportContainer}>
-            <h1 className={styles.supportHeader}>Support Our Cause: Giving<br/>Hope, One Paw at a Time.</h1>
-            <p className={styles.support}>Your donations help provide vital essentials for the animals at Haven, ensuring they receive the love, care, and support they need. With your help, we can create a haven of comfort, warmth, and well—being for our cuddly friends awaiting their future homes.</p>
-          </div>
-          <div className={styles.supportImgs}>
-            <Image
-              className={styles.supportThumb}
-              src="/assets/volunteerthumb.jpeg"
-              alt="volunteer holding dog"
-              width={358}
-              height={380}
-            />
-            <Image
-              className={styles.supportDog}
-              src="/assets/dogvector.svg"
-              alt="a vector of a cute brown fluffy dog"
-              width={217}
-              height={121}
-            />
-          </div>
+      <div className={styles.volunteer2Container}>
+        <div className={styles.supportContainer}>
+          <h1 className={styles.supportHeader}>Support Our Cause: Giving<br />Hope, One Paw at a Time.</h1>
+          <p className={styles.support}>Your donations help provide vital essentials for the animals at Haven, ensuring they receive the love, care, and support they need. With your help, we can create a haven of comfort, warmth, and well—being for our cuddly friends awaiting their future homes.</p>
         </div>
+        <div className={styles.supportImgs}>
+          <Image
+            className={styles.supportThumb}
+            src="/assets/volunteerthumb.jpeg"
+            alt="volunteer holding dog"
+            width={358}
+            height={380}
+          />
+          <Image
+            className={styles.supportDog}
+            src="/assets/dogvector.svg"
+            alt="a vector of a cute brown fluffy dog"
+            width={217}
+            height={121}
+          />
+        </div>
+      </div>
 
       <div className={styles.featResourceContainer}>
-          <div className={styles.featResourceHeader}>
-            <h1 className={styles.featuredPets}>Discover more tips and resources below!</h1>
-            <SeeMoreBtn />
-          </div>
-          <div className={styles.featResourceCard}>
-          <FeatResourceCard/>
-          <FeatResourceCard/>
-          <FeatResourceCard/>
-          </div>
+        <div className={styles.featResourceHeader}>
+          <h1 className={styles.featuredPets}>Discover more tips and resources below!</h1>
+          <SeeMoreBtn />
         </div>
+        <div className={styles.featResourceCard}>
+          <FeatResourceCard />
+          <FeatResourceCard />
+          <FeatResourceCard />
+        </div>
+      </div>
 
-        <div className={styles.footer}>
-          <Footer />
-        </div>
+      <footer className={styles.footer}>
+        <Footer />
+      </footer>
     </main>
   );
 }

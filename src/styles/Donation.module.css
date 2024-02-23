@@ -3,9 +3,8 @@
     flex-direction: row;
     gap: 5rem;
     justify-content: center;
+    padding: 1rem 10rem 10rem 10rem;
     align-items: center;
-    padding: 10rem;
-    min-height: 100vh;
 }
 
 .heading {
@@ -13,4 +12,9 @@
     font-weight: 400;
     color: var(--black);
     padding-bottom: 1rem;
+}
+
+.header {
+    position: sticky;
+    top: 0;
 }
