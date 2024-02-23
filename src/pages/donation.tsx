@@ -1,6 +1,8 @@
 import Head from "next/head";
 import styles from '@/styles/Donation.module.css'
 import DonationCard from "@/components/DonationCard";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function Donation() {
     return (
@@ -12,6 +14,9 @@ export default function Donation() {
                 <link rel="icon" href="/assets/haven-favi.svg" />
             </Head>
             <main className={styles.main}>
+                <div className={styles.header}>
+                    <Header />
+                </div>
                 <div className={styles.container}>
                     <div className={styles.text}>
                         <h1 className={styles.heading}>Support Our Cause</h1>
@@ -23,6 +28,9 @@ export default function Donation() {
                         </p>
                     </div>
                     <DonationCard />
+                </div>
+                <div className={styles.footer}>
+                    <Footer />
                 </div>
             </main>
         </>
