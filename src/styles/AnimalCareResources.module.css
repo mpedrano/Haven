@@ -1,0 +1,51 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+
+}
+
+.footer {
+    bottom: 0;
+    margin: 0;
+}
+
+.intro {
+    max-width: 800px;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.introTitle {
+    font-size: 1.5rem;
+}
+
+.petBehaviour,
+.behaviourCards,
+.trainingCards,
+.petTraining {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.behaviourCards,
+.trainingCards {
+    flex-direction: row;
+}
+
+.title {
+    font-size: 1.5rem;
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+}
+
+.intro {}
