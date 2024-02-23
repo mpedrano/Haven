@@ -79,7 +79,7 @@ export default function Home() {
           <div className={styles.supportImgs}>
             <Image
               className={styles.supportThumb}
-              src="/assets/volunteerimg2.jpeg"
+              src="/assets/volunteerthumb.jpeg"
               alt="volunteer holding dog"
               width={358}
               height={380}
