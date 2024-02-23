@@ -4,6 +4,13 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    padding: var(--padding);
+    padding-top: 0;
+}
+
+.header {
+    position: sticky;
+    width: 100%;
 }
 
 .header,
