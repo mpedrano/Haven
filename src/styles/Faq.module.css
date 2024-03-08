@@ -4,18 +4,23 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding: var(--padding);
+    padding-left: var(--padding);
+    padding-right: var(--padding);
     padding-top: 0;
+
 }
 
 .header {
+    margin-top: 0;
     position: sticky;
     width: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 0;
 }
 
-.header,
-.headerIcons,
-.footer {
+
+.headerIcons {
     margin: 20px;
 }
 

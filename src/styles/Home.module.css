@@ -7,7 +7,6 @@
     align-items: center;
     min-height: auto;
     color: var(--white);
-
     padding-bottom: 0;
     padding-top: 0;
 }
@@ -152,7 +151,7 @@
 }
 
 .volunteer2Container {
-        display: flex;
+    display: flex;
     width: 68rem;
     height: 50rem;
     flex-direction: row;
@@ -181,17 +180,17 @@
     color: var(--black);
 }
 
-.supportDog{
-    margin-right:-40px;
+.supportDog {
+    margin-right: -40px;
 }
 
-.featResourceContainer{
+.featResourceContainer {
     display: flex;
     flex-direction: column;
     width: 68rem;
 }
 
-.featResourceCard{
+.featResourceCard {
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -199,9 +198,9 @@
     padding-bottom: 5rem;
 }
 
-.featResourceHeader{
+.featResourceHeader {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
 }
