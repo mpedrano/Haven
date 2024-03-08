@@ -15,8 +15,8 @@ export default function Header() {
                     <Image src={Logo} width={110} height={100} alt="logo" />
                     <div className={styles.links}>
                         <Link href={"/"} className={styles.animals}>animals</Link>
-                        <Link href={"/"} className={styles.adoption}>adoption</Link>
-                        <Link href={"/"} className={styles.resources}>resources</Link>
+                        <Link href={"/faq"} className={styles.adoption}>adoption</Link>
+                        <Link href={"/resources"} className={styles.resources}>resources</Link>
                     </div>
                 </div>
             </main>
