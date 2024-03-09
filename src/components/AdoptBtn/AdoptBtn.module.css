@@ -3,6 +3,7 @@
     height: 80px;
     border-radius: var(--border-radius);
     background-color: var(--teal);
+    color: var(--white);
     transition: background-color 0.3s ease; 
     font-size: 30px;
     font-weight: 300;

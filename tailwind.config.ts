@@ -13,8 +13,19 @@ const config: Config = {
   plugins: [require('daisyui')],
 
   daisyui: {
-    themes: [],
-    darkTheme: [], 
+    themes: [
+      {
+        mytheme: {
+          ".steps-vertical .step:before": {
+            backgroundColor: "#D9D9D9", 
+          },
+          success: "#F6B7CC",
+          neutral: "#d9d9d9"
+        },
+      },
+    ],
+    darkTheme: [],
   },
 };
+
 export default config;
