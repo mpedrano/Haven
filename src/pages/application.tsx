@@ -1,10 +1,17 @@
 import Head from "next/head"
+import { useState } from "react"
 import Header from "@/components/Header"
 import styles from '@/styles/Application.module.css'
 import Steps from "@/components/Steps"
 import Footer from "@/components/Footer"
 
 export default function Application(){
+    const [currentStep, setCurrentStep] = useState(0);
+
+    const handleNextStep = () => {
+        setCurrentStep(currentStep + 1); 
+    }
+
     return(
         <>
         <Head>
@@ -19,11 +26,52 @@ export default function Application(){
                 <Header />
             </div>
             <div className={styles.stepsContainer}>
-             <Steps/>
-            <div className={styles.formContainer}>
-                <h1>Adoption Application</h1>
-                <p>Start the process to welcoming your new family member.</p>
-            </div>
+                <Steps currentStep={currentStep}/>
+                <div className={styles.formContainer}>
+                    <p className={styles.formHeader}>Adoption Application</p>
+                    <p className={styles.subHeader}>Start the process to welcoming your new family member.</p>
+                    <div className={styles.inputContainer}>
+                        <div className={styles.input}>
+                            <label className={styles.prompt}>First Name*</label>
+                            <input className={styles.type} type="text" id="firstName" name="firstName"/>
+                        </div>
+                        <div className={styles.input}>
+                            <label className={styles.prompt}>Last Name*</label>
+                            <input className={styles.type} type="text" id="lastName" name="lastName"  />
+                        </div>
+                        
+                        <div className={styles.input}>
+                            <label className={styles.prompt}>Email*</label>
+                            <input className={styles.type} type="text" id="email" name="email" />
+                        </div>
+                        
+                        <div className={styles.input}>
+                            <label className={styles.prompt}>Phone Number*</label>
+                            <input className={styles.type} type="text" id="phone" name="phone"/>
+                        </div>
+                        
+                        <div className={styles.input}>
+                            <label className={styles.prompt}>Address*</label>
+                            <input className={styles.type} type="text" id="address" name="Address"/>
+                        </div>
+
+                        <div className={styles.input}>
+                            <label className={styles.prompt}>City*</label>
+                            <input className={styles.type} type="text" id="city" name="City"/>
+                        </div>
+
+                        <div className={styles.input}>
+                            <label className={styles.prompt}>Province/State*</label>
+                            <input className={styles.type} type="text" id="province/state" name="province/state"/>
+                        </div>
+
+                        <div className={styles.input}>
+                            <label className={styles.prompt}>Postal Code</label>
+                            <input className={styles.type} type="text" id="postal" name="postal"/>
+                        </div>
+                    </div>
+                        <button onClick={handleNextStep}>Next</button>
+                </div>
             </div>
 
             <footer className={styles.footer}>
@@ -31,5 +79,5 @@ export default function Application(){
             </footer>
         </main>
     </>
-)
+    )
 }
