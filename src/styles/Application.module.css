@@ -9,14 +9,61 @@
 }
 
 .header {
+    margin-top: 0;
     position: sticky;
-    top: 0;
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 0;
+}
+
+.formHeader{
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.subHeader{
+    font-size: 20px;
+    font-weight: 400;
+    color: gray;
 }
 
 .stepsContainer{
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    padding-top: 2rem;
+    gap: 5rem;
     justify-content: center;
-    width: 100%;
+    width: 967px;
+    height: 1241px;
+}
+
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    gap:35px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 519px;
+    height: 88px;
+}
+
+.type{
+    width: 519px;
+    height: 53px;
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+
+.prompt{
+    font-family: Lexend;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
 }
