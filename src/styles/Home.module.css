@@ -6,8 +6,6 @@
     flex-direction: column;
     align-items: center;
     min-height: auto;
-    color: var(--white);
-
     padding-bottom: 0;
     padding-top: 0;
 }

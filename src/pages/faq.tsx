@@ -40,6 +40,8 @@ export default function Faq() {
                     <div className={styles.adoption}>
                         <h1 className={styles.title}>2. Fill out Our Adoption Form</h1>
                         <p> Once you've found a pet you're interested in, make note of their name, ID number, and location on the adoption < br /> file. Fill out our online application form (no account or password required).</p>
+                        <button className={styles.adoptBtn}>Fill Out Adoption Form &gt;</button>
+                        <p className={styles.disclaimer}>*We often receive multiple applications for the same animal. Due to the high volume, we can only directly respond to the first few applicants who may be a match for the animal. Don't be discouraged if you're not contacted immediately. We encourage you to continue exploring our website as new animals arrive daily. Thank you for your patience and understanding!</p>
                     </div>
                     <div className={styles.meetGreet}>
                         <h1 className={styles.title}>3. Meet & Greet</h1>

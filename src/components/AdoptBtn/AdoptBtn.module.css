@@ -8,7 +8,7 @@
   font-weight: 300;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 450px) {
   .btn {
     width: 120px;
     height: 40px;
