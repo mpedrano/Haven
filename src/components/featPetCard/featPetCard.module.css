@@ -1,59 +1,68 @@
-.card-title{
-    color: var(--black);
+.card-title {
+  color: var(--black);
 }
 
 .card {
-    width: 255px;
-    height: 290px;
-  }
+  width: 255px;
+  height: 290px;
+}
 
 .petName {
-    font-size: 20px;
-    font-weight: 700;
-    text-align: left;
-    color: var(--black); 
-  }
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  color: var(--black);
+}
 
-  .cardBody {
-    padding: 1rem;
-  }
-  
-  .petIcons{
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
+.cardBody {
+  padding: 1rem;
+}
 
-  .iconsInfo{
-    display: flex;
-    flex-direction: row;
-    gap:10px;
-    color: var(--black);
-    font-weight: 300;
-    font-size: 11px;
-  }
+.petIcons {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
 
-  .adoptBtn{
-    width: 95px;
-    height: 31px;
-    background-color: var(--pink);
-    border-radius: 15px;
-    color: var(--black);
-    font-weight: 300;
-    font-size: 10px;
-  }
+.iconsInfo {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: var(--black);
+  font-weight: 300;
+  font-size: 11px;
+}
 
-  .petContent{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: end;
-  }
+.adoptBtn {
+  width: 95px;
+  height: 31px;
+  background-color: var(--pink);
+  border-radius: 15px;
+  color: var(--black);
+  font-weight: 300;
+  font-size: 10px;
+}
 
+.petContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.featuredPetsGrid {
+  padding-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  row-gap: 40px;
+}
+
+@media (max-width: 450px) {
   .featuredPetsGrid {
-    padding-top: 5rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    row-gap: 40px; 
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    width: 18rem;
   }
+}

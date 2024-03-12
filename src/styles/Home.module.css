@@ -203,3 +203,112 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@media (max-width: 450px) {
+    .foldContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tagline {
+        font-size: 1.2rem;
+        line-height: 25px;
+    }
+
+    .taglineCta {
+        justify-content: center;
+        align-items: center;
+        padding-top: 10rem;
+    }
+
+    .headericons {
+        position: absolute;
+        z-index: -1;
+        opacity: 0.4;
+    }
+
+    .volunteerContainer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .aboutContainer {
+        width: 18rem;
+        gap: 20px;
+    }
+
+    .aboutHeader {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .about {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+
+    .browndog {
+        width: 100px;
+        height: 150px;
+    }
+
+    .volunteerThumb {
+        width: 228px;
+        height: 240px;
+        border-radius: 15px;
+    }
+
+    .featuredPets {
+        font-size: 22px;
+        line-height: 20px;
+    }
+
+    .featuredPetsContainer {
+        padding-top: 3rem;
+    }
+
+    .featHeader {
+        width: 18rem;
+    }
+
+    .supportHeader {
+        font-size: 22px;
+        line-height: 25px;
+        padding-top: 5rem;
+    }
+
+    .supportContainer {
+        flex-direction: column;
+        width: 18rem;
+    }
+
+    .volunteer2Container {
+        width: 18rem;
+        flex-direction: column;
+    }
+
+    .supportThumb {
+        width: 228px;
+        height: 240px;
+    }
+
+    .support {
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--black);
+    }
+
+    .supportDog {
+        width: 100px;
+        height: 50px;
+    }
+
+    .featResourceContainer {
+        width: 18rem;
+    }
+
+    .featResourceCard {
+        gap: 2rem;
+        overflow-x: auto;
+    }
+}

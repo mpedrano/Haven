@@ -1,11 +1,18 @@
 .btn {
-    width: 286px;
-    height: 80px;
-    border-radius: var(--border-radius);
-    background-color: var(--teal);
-    color: var(--white);
-    transition: background-color 0.3s ease; 
-    font-size: 30px;
-    font-weight: 300;
+  width: 286px;
+  height: 80px;
+  border-radius: var(--border-radius);
+  background-color: var(--teal);
+  transition: background-color 0.3s ease;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+@media (max-width: 450px) {
+  .btn {
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 13px;
   }
-  
+}
