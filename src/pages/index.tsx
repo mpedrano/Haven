@@ -33,6 +33,7 @@ export default function Home() {
             </div>
           </div>
           <Image
+            className={styles.headericons}
             src="/assets/headericons.svg"
             alt="haven vectors"
             width={550}
@@ -45,6 +46,7 @@ export default function Home() {
       <div className={styles.volunteerContainer}>
         <div className={styles.volunteerImgs}>
           <Image
+            className={styles.browndog}
             src="/assets/browndog.svg"
             alt="a vector of a cute brown fluffy dog"
             width={169}
