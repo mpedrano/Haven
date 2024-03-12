@@ -48,4 +48,11 @@
     padding-bottom: 2rem;
 }
 
-.intro {}
+@media (max-width: 450px) {
+
+    .behaviourCards,
+    .trainingCards {
+        overflow-x: auto;
+        width: 25rem;
+    }
+}
