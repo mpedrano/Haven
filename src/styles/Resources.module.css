@@ -61,3 +61,11 @@
     gap: 2rem;
     padding-top: 5rem;
 }
+
+@media (max-width: 450px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
