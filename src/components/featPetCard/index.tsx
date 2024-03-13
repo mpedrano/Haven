@@ -34,18 +34,23 @@ export default function FeatPetCard() {
         const fetchData = async () => {
             try {
                 if (accessToken) {
-                    const totalPages = 100;
-                    const randomPage = Math.floor(Math.random() * totalPages) + 1;
-                    const url = `https://api.petfinder.com/v2/animals?type=dog&page=${randomPage}`;
-                    const response = await axios.get(url, {
-                        headers: {
-                            "Authorization": "Bearer " + accessToken
-                        }
-                    });
+                    let dogData: IDog[] = [];
+                    let page = 1;
 
-                    const dogData = response.data.animals.filter((dog: IDog) => dog.photos.length > 0);
+                    while (dogData.length < 8 && page <= 100) {
+                        const url = `https://api.petfinder.com/v2/animals?type=dog&page=${page}`;
+                        const response = await axios.get(url, {
+                            headers: {
+                                "Authorization": "Bearer " + accessToken
+                            }
+                        });
+
+                        const dogPhotos = response.data.animals.filter((dog: IDog) => dog.photos.length > 0);
+                        dogData = [...dogData, ...dogPhotos];
+                        page++;
+                    }
+
                     setDogs(dogData.slice(0, 8));
-                    console.log(response.data.animals);
                 }
             } catch (error) {
                 console.error(error);
