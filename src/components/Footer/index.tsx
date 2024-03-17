@@ -25,8 +25,10 @@ export default function Footer() {
                     <div className={styles.belowLine}>
                         <p>© 2024 haven. all rights reserved.</p>
                         <Image src={Logo} width={100} height={100} alt="logo" />
-                        <p>terms of service</p>
-                        <p>privacy policy</p>
+                        <div className={styles.terms}>
+                            <p>terms of service</p>
+                            <p>privacy policy</p>
+                        </div>
                     </div>
                 </div>
             </main>
