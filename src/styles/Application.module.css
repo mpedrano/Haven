@@ -18,7 +18,7 @@
 }
 
 .formHeader{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
     color: var(--black);
 }
@@ -50,7 +50,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 519px;
+    width: 420px;
     height: 88px;
 }
 
@@ -63,7 +63,7 @@
 
 .prompt{
     font-family: Lexend;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
     line-height: 25px;
 }
