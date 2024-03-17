@@ -4,7 +4,6 @@
     flex-direction: column;
     align-items: center;
     min-height: auto;
-    color: var(--white);
     padding-left: var(--padding);
     padding-right: var(--padding);
     padding-top: 0;
@@ -63,9 +62,16 @@
 }
 
 @media (max-width: 450px) {
+    .header {
+        width: 100vw;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .cards {
         display: flex;
         flex-direction: column;
         gap: 3rem;
+        padding-bottom: 5rem;
     }
 }

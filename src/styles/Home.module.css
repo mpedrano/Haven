@@ -181,6 +181,8 @@
 
 .supportDog {
     margin-right: -40px;
+    width: 185px;
+    height: 100px;
 }
 
 .featResourceContainer {
@@ -219,11 +221,16 @@
         justify-content: center;
         align-items: center;
         padding-top: 10rem;
+        z-index: 1;
+    }
+
+    .header {
+        z-index: 2;
     }
 
     .headericons {
         position: absolute;
-        z-index: -1;
+        z-index: 0;
         opacity: 0.4;
     }
 
@@ -249,8 +256,8 @@
     }
 
     .browndog {
-        width: 100px;
-        height: 150px;
+        width: 70px;
+        height: 100px;
     }
 
     .volunteerThumb {
