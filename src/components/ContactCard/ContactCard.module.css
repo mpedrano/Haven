@@ -1,0 +1,38 @@
+.contactCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 2rem;
+}
+
+.inputContainer {
+    margin-bottom: 1rem;
+}
+
+.inputContainer label {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.inputContainer input,
+.inputContainer textarea {
+    width: 80%;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+    box-sizing: border-box;
+}
+
+.inputContainer textarea {
+    height: 1rem;
+}
+
+.submitButton {
+    background-color: var(--yellow);
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 20%;
+}
