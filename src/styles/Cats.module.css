@@ -1,0 +1,90 @@
+.main {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: f;
+    min-height: auto;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    padding-top: 0;
+
+}
+
+.header {
+    margin-top: 0;
+    position: sticky;
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.title {
+    display: flex;
+}
+
+.footer {
+    bottom: 0;
+    margin: 0;
+}
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.title {
+    margin-left: 3rem;
+    padding-bottom: 3rem;
+    color: #000;
+    text-align: center;
+    font-family: Lexend;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.allDogs {
+    width: 11.75rem;
+    height: 3.625rem;
+    flex-shrink: 0;
+    background-color: #FFCB7766;
+    border-radius: 15px;
+    margin-left: 2.5rem;
+
+}
+
+.allCats {
+    width: 11.75rem;
+    height: 3.625rem;
+    flex-shrink: 0;
+    background-color: #FFCB77BF;
+    border-radius: 15px;
+    margin-left: 2rem;
+}
+
+.other {
+    width: 11.75rem;
+    height: 3.625rem;
+    flex-shrink: 0;
+    margin-left: 2rem;
+    background-color: #FFCB7766;
+    border-radius: 15px;
+
+}
+
+
+.dropdown {
+    margin-left: 16rem;
+    display: flex;
+    width: 18.125rem;
+    padding: 1rem 1.25rem;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.625rem;
+    border: 1px solid rgba(7, 30, 34, 0.30);
+    background-color: rgba(255, 255, 255, 0);
+
+}
