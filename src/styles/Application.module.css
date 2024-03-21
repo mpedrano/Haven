@@ -32,7 +32,7 @@
 .stepsContainer{
     display: flex;
     flex-direction: row;
-    padding-top: 2rem;
+    padding-top: 1rem;
     gap: 5rem;
     justify-content: center;
     width: 967px;
@@ -50,8 +50,6 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 420px;
-    height: 88px;
 }
 
 .type{
@@ -66,4 +64,27 @@
     font-size: 15px;
     font-weight: 500;
     line-height: 25px;
+}
+
+.nextBtn{
+    width: 200px;
+    height: 64px;
+    background-color: var(--teal);
+    color: var(--white);
+    border-radius: 15px;
+}
+
+.backBtn{
+    width: 200px;
+    height: 64px;
+    background-color: gray;
+    color: var(--white);
+    border-radius: 15px;
+}
+
+.buttonContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding-top: 3rem;
 }

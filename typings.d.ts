@@ -27,3 +27,14 @@ interface INonprofit {
     name: string;
     description: string;
 }
+
+interface IRadio {
+    options: string[];
+    questionIndex: number;
+    onSelect: (value: string) => void; 
+    selectedValue: string; 
+}
+
+
+
+
