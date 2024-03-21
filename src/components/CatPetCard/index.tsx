@@ -1,4 +1,4 @@
-import styles from "@/components/CatPetCard/CatPetCard.module.css";
+import styles from "./CatPetCard.module.css";
 import Image from "next/image";
 import axios from "axios";
 import { useEffect, useState } from "react";
