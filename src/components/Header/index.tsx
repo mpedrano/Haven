@@ -14,7 +14,7 @@ export default function Header() {
                 <div className={styles.container}>
                     <Image src={Logo} width={110} height={100} alt="logo" />
                     <div className={styles.links}>
-                        <Link href={"/"} className={styles.animals}>animals</Link>
+                        <Link href={"/cats"} className={styles.animals}>animals</Link>
                         <Link href={"/faq"} className={styles.adoption}>adoption</Link>
                         <Link href={"/resources"} className={styles.resources}>resources</Link>
                     </div>
@@ -24,7 +24,7 @@ export default function Header() {
                     {
                         menu === true ?
                             <div className={styles.openMenu}>
-                                <Link className={styles.link} href="/">animals</Link>
+                                <Link className={styles.link} href="/cats">animals</Link>
                                 <Link className={styles.link} href="/faq">adoption</Link>
                                 <Link className={styles.link} href="/resources">resources</Link>
                             </div> :

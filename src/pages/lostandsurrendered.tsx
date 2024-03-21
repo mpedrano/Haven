@@ -6,7 +6,7 @@ import Head from "next/head";
 import { StyleRegistry } from 'styled-jsx';
 
 export default function LostandSurrendered() {
-    return(
+    return (
         <main className={styles.main}>
             <Head>
                 <title>Haven</title>
@@ -25,10 +25,10 @@ export default function LostandSurrendered() {
                 <div className={styles.right}>
                     <ContactCard />
                 </div>
-                
+
             </div>
             <div className={styles.footer}>
-             <Footer />
+                <Footer />
             </div>
         </main>
     );
