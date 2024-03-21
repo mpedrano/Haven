@@ -71,7 +71,7 @@ export default function Home() {
           <h1 className={styles.featuredPets}>Find Your New Best Friend 🐾</h1>
           <SeeMoreBtn />
         </div>
-          <FeatPetCard/>
+         <FeatPetCard />
       </div>
 
       <div className={styles.volunteer2Container}>
