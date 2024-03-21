@@ -1,0 +1,11 @@
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    align-items: flex-start;
+}
+
+.label-text{
+    padding-left: 1rem;
+}
