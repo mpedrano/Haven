@@ -1,6 +1,6 @@
 import styles from './Footer.module.css'
 import Link from 'next/link'
-import Logo from '/public/assets/haven-yellow.svg'
+import Logo from '/public/assets/HavenFooter.svg'
 import Image from 'next/image'
 
 export default function Footer() {
@@ -24,7 +24,7 @@ export default function Footer() {
                     <hr className={styles.line}></hr>
                     <div className={styles.belowLine}>
                         <p>© 2024 haven. all rights reserved.</p>
-                        <Image src={Logo} width={100} height={100} alt="logo" />
+                        <Image className={styles.logo} src={Logo} width={100} height={100} alt="logo" />
                         <div className={styles.terms}>
                             <p>terms of service</p>
                             <p>privacy policy</p>

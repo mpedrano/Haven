@@ -17,6 +17,11 @@
     font-size: 24px;
     font-style: normal;
     font-weight: 200;
+    gap: 2rem;
+}
+
+.contact {
+    margin-right: 20rem;
 }
 
 .address {
@@ -29,6 +34,7 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 300;
+
 }
 
 
@@ -41,7 +47,8 @@
 .overLine {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
+
 }
 
 .belowLine {
@@ -51,6 +58,18 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 200;
+}
+
+.logo {
+    margin-left: 10rem;
+    margin-right: 10rem;
+
+}
+
+.terms {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
 }
 
 @media (max-width: 450px) {
