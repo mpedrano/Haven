@@ -14,6 +14,23 @@
     color: var(--black);
 }
 
+.dropdown {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10rem;
+
+}
+
+.select {
+    display: flex;
+    width: 18.125rem;
+    padding: 1rem 1.25rem;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.625rem;
+    border: 1px solid rgba(7, 30, 34, 0.30);
+}
+
 .cardBody {
     padding: 1rem;
 }
@@ -65,4 +82,28 @@
         overflow-x: auto;
         width: 18rem;
     }
+}
+
+.loadMore {
+    width: 11.75rem;
+    height: 3.625rem;
+    flex-shrink: 0;
+    background-color: #FFCB7766;
+    border-radius: 15px;
+    margin-left: 2.5rem;
+}
+
+.loadContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-right: 6rem;
+
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    margin-right: 6rem;
+    margin-top: 2rem;
 }
