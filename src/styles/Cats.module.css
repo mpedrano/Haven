@@ -25,6 +25,7 @@
 .footer {
     bottom: 0;
     margin: 0;
+    margin-top: 10rem;
 }
 
 .filters {
@@ -76,15 +77,9 @@
 }
 
 
-.dropdown {
-    margin-left: 16rem;
-    display: flex;
-    width: 18.125rem;
-    padding: 1rem 1.25rem;
-    align-items: center;
-    gap: 0.625rem;
-    border-radius: 0.625rem;
-    border: 1px solid rgba(7, 30, 34, 0.30);
-    background-color: rgba(255, 255, 255, 0);
 
+
+.petCards {
+    position: relative;
+    margin-left: 2.5rem;
 }
