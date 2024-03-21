@@ -4,7 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from '@/styles/Home.module.css'
 import SeeMoreBtn from "@/components/seeMoreBtn";
-import FeatPetCard from "@/components/FeatPetCard";
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FeatResourceCard from "@/components/FeatResourceCard";
@@ -71,7 +71,7 @@ export default function Home() {
           <h1 className={styles.featuredPets}>Find Your New Best Friend 🐾</h1>
           <SeeMoreBtn />
         </div>
-        <FeatPetCard />
+
       </div>
 
       <div className={styles.volunteer2Container}>
