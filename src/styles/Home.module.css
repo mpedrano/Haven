@@ -320,3 +320,79 @@
         overflow-x: auto;
     }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .main {
+        gap: 1rem;
+    }
+
+    .tagline {
+        font-size: 1.5rem;
+        padding-left: 2rem;
+    }
+
+    .ctaBtns {
+        padding-left: 2rem;
+    }
+
+    .headericons {
+        width: 20rem;
+    }
+
+    .aboutHeader {
+        font-size: 1.5rem;
+    }
+
+    .about {
+        font-size: 1.5rem;
+        width: 30rem;
+    }
+
+    .volunteerContainer {
+        padding-left: 22rem;
+    }
+
+    .volunteerThumb {
+        display: none;
+    }
+
+    .featuredPets {
+        font-size: 1.5rem;
+        padding-left: 10rem;
+    }
+
+    .featuredPetsContainer {
+        width: 20%;
+        /* fix */
+    }
+
+    .supportThumb {
+        display: none;
+    }
+
+    .supportHeader {
+        font-size: 1.5rem;
+        padding-left: 10rem;
+    }
+
+    .support {
+        font-size: 1.5rem;
+        padding-left: 10rem;
+        width: 40rem;
+
+    }
+
+    .supportDog {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .supportImgs {
+        padding-right: 20rem;
+    }
+
+    .featResourceCard {
+        width: 2rem;
+    }
+
+}

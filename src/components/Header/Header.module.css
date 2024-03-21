@@ -75,3 +75,34 @@
         display: none;
     }
 }
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        min-width: 100vw;
+        padding: 0 3rem;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .openMenu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        text-align: right;
+        right: 10%;
+        top: 70%;
+        gap: 2rem;
+        padding: 1rem;
+        background-color: var(--white);
+        border-radius: 10px;
+    }
+
+    .links {
+        display: none;
+    }
+}

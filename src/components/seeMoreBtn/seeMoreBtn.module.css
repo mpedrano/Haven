@@ -1,15 +1,22 @@
 .btn {
-    width: 142px;
-    height: 43px;
-    border-radius: 10px;
-    border: var(--teal) solid 1px;
-    color: var(--teal);
-    font-size: 20px;
-    font-weight: 300;
-  }
+  width: 142px;
+  height: 43px;
+  border-radius: 10px;
+  border: var(--teal) solid 1px;
+  color: var(--teal);
+  font-size: 20px;
+  font-weight: 300;
+}
 
-.btn:hover{
-    background-color: var(--teal);
-    color: var(--white);
-    transition: background-color 0.3s ease; 
-}  
+.btn:hover {
+  background-color: var(--teal);
+  color: var(--white);
+  transition: background-color 0.3s ease;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .btn {
+    width: 10rem;
+    font-size: 1rem;
+  }
+}
