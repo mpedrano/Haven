@@ -20,7 +20,8 @@ const config: Config = {
             backgroundColor: "#D9D9D9", 
           },
           success: "#F6B7CC",
-          neutral: "#d9d9d9"
+          neutral: "#d9d9d9",
+          info:"#1D7874"
         },
       },
     ],

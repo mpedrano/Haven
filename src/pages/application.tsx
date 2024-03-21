@@ -5,9 +5,12 @@ import styles from '@/styles/Application.module.css';
 import Steps from "@/components/Steps";
 import Footer from "@/components/Footer";
 import { questions } from "../../data/questions";
+import { answers } from "../../data/answers"; 
+import Radio from "@/components/Radio";
 
 export default function Application() {
     const [currentStep, setCurrentStep] = useState(0);
+    const [formData, setFormData] = useState<Array<{ [key: string]: string }>>(Array(questions.length).fill({}));
 
     const handleNextStep = () => {
         setCurrentStep(currentStep + 1);
@@ -16,6 +19,31 @@ export default function Application() {
     const handlePrevStep = () => {
         setCurrentStep(currentStep - 1);
     }
+
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>, questionIndex: number) => {
+        const { name, value } = e.target;
+        setFormData(prevFormData => {
+            const newFormData = [...prevFormData];
+            newFormData[currentStep] = {
+                ...newFormData[currentStep],
+                [name]: value
+            };
+            return newFormData;
+        });
+    };
+
+    const handleRadioChange = (questionIndex: number, value: string) => {
+        setFormData(prevFormData => {
+            const newFormData = [...prevFormData];
+            newFormData[currentStep] = {
+                ...newFormData[currentStep],
+                radio: value
+            };
+            return newFormData;
+        });
+    };
+
+    const isLastStep = currentStep === questions.length - 1;
 
     return (
         <>
@@ -39,13 +67,33 @@ export default function Application() {
                             {questions[currentStep].map((question, index) => (
                                 <div key={index} className={styles.input}>
                                     <label className={styles.prompt}>{question}*</label>
-                                    <input className={styles.type} type="text" id={question.toLowerCase().replace(/\s/g, "-")} name={question.toLowerCase().replace(/\s/g, "-")} />
+                                    {currentStep !== 2 ? (
+                                        <input 
+                                            className={styles.type} 
+                                            type="text" 
+                                            id={question.toLowerCase().replace(/\s/g, "-")} 
+                                            name={question.toLowerCase().replace(/\s/g, "-")} 
+                                            onChange={(e) => handleInputChange(e, index)}
+                                            value={formData[currentStep][question.toLowerCase().replace(/\s/g, "-")] || ''}
+                                        />
+                                    ) : (
+                                        <Radio
+                                            options={answers[index]}
+                                            questionIndex={index}
+                                            onSelect={(value: string) => handleRadioChange(index, value)} 
+                                            selectedValue={formData[currentStep].radio || ''}
+                                        /> 
+                                    )}
                                 </div>
                             ))}
                         </div>
                         <div className={styles.buttonContainer}>
-                            {currentStep > 0 && <button onClick={handlePrevStep}>Back</button>}
-                            {currentStep < questions.length - 1 && <button onClick={handleNextStep}>Next</button>}
+                            {currentStep > 0 && <button onClick={handlePrevStep} className={styles.backBtn}>Back</button>}
+                            {isLastStep ? (
+                                <button onClick={handleNextStep} className={styles.nextBtn}>Finish</button>
+                            ) : (
+                                <button onClick={handleNextStep} className={styles.nextBtn}>Next</button>
+                            )}
                         </div>
                     </div>
                 </div>
