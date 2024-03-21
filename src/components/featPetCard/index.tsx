@@ -1,4 +1,4 @@
-import styles from "@/components/FeatPetCard/FeatPetCard.module.css";
+import styles from '@/components/FeatPetCard/FeatPetCard.module.css'
 import Image from "next/image";
 import axios from "axios";
 import { useEffect, useState } from "react";
