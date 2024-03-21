@@ -1,4 +1,4 @@
-import styles from "@/components/featPetCard/featPetCard.module.css";
+import styles from "@/components/CatPetCard/catPetCard.module.css";
 import Image from "next/image";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -50,7 +50,7 @@ export default function CatPetCard() {
                         page++;
                     }
 
-                    setCat(catData.slice(0, 8));
+                    setCat(catData.slice(0, 50));
                 }
             } catch (error) {
                 console.error(error);
