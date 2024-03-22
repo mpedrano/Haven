@@ -34,6 +34,11 @@
 
 }
 
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
 .title {
     margin-left: 3rem;
     padding-bottom: 3rem;
