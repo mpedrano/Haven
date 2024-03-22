@@ -1,4 +1,5 @@
 interface IDog {
+    id: number,
     name: string;
     gender: string;
     age: string;
@@ -11,6 +12,7 @@ interface IDog {
 }
 
 interface ICat {
+    id: number,
     name: string;
     gender: string;
     age: string;
@@ -23,6 +25,7 @@ interface ICat {
 }
 
 interface IAnimal {
+    id: number,
     name: string;
     gender: string;
     age: string;
@@ -44,8 +47,8 @@ interface INonprofit {
 interface IRadio {
     options: string[];
     questionIndex: number;
-    onSelect: (value: string) => void; 
-    selectedValue: string; 
+    onSelect: (value: string) => void;
+    selectedValue: string;
 }
 
 
