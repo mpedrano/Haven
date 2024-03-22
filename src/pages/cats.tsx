@@ -5,6 +5,8 @@ import CatPetCard from '@/components/CatPetCard';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import axios from 'axios';
+import FilterIcon from '@/components/Filter';
+import { Filter } from '@/components/Filter';
 
 export default function Cats() {
     const [breeds, setBreeds] = useState<string[]>([]);
@@ -32,11 +34,10 @@ export default function Cats() {
                     <h1 className={styles.title}>Your Feline Friend is Awaiting</h1>
                     <div className={styles.filters}>
                         <div className={styles.buttons}>
-                            <a href={"/"} className={styles.allDogs}>All Dogs</a>
-                            <a href={"/cats"} className={styles.allCats}>All Cats</a>
-                            <a href={"/otherpets"} className={styles.other}>Other</a>
+                            <FilterIcon filter={Filter.Dog} />
+                            <FilterIcon filter={Filter.Cat} />
+                            <FilterIcon filter={Filter.Other} />
                         </div>
-
                     </div>
                 </div>
 

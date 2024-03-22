@@ -47,6 +47,11 @@
     line-height: normal;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
 .allDogs {
     width: 11.75rem;
     height: 3.625rem;

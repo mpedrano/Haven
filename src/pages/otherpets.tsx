@@ -1,10 +1,11 @@
-// Cats.tsx
 import React, { useEffect, useState } from 'react';
 import styles from '@/styles/Other.module.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import axios from 'axios';
 import OtherPetCard from '@/components/OtherPetCard';
+import FilterIcon from '@/components/Filter';
+import { Filter } from '@/components/Filter';
 
 export default function Other() {
     const [breeds, setBreeds] = useState<string[]>([]);
@@ -32,11 +33,10 @@ export default function Other() {
                     <h1 className={styles.title}>Your New Best Friend is Awaiting</h1>
                     <div className={styles.filters}>
                         <div className={styles.buttons}>
-                            <a href={"/"} className={styles.allDogs}>All Dogs</a>
-                            <a href={"/cats"} className={styles.allCats}>All Cats</a>
-                            <a href={"/otherpets"} className={styles.other}>Other</a>
+                            <FilterIcon filter={Filter.Dog} />
+                            <FilterIcon filter={Filter.Cat} />
+                            <FilterIcon filter={Filter.Other} />
                         </div>
-
                     </div>
                 </div>
 

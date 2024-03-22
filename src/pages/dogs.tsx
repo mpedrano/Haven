@@ -1,8 +1,9 @@
-
 import styles from '@/styles/Dogs.module.css'
 import DogPetCard from '@/components/DogPetCard'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import FilterIcon from '@/components/Filter';
+import { Filter } from '@/components/Filter';
 
 export default function Dogs() {
     return (
@@ -16,9 +17,9 @@ export default function Dogs() {
                     <h1 className={styles.title}>Your Feline Friend is Awaiting</h1>
                     <div className={styles.filters}>
                         <div className={styles.buttons}>
-                            <button className={styles.allDogs}>All Dogs</button>
-                            <button className={styles.allCats}>All Cats</button>
-                            <button className={styles.other}>Other</button>
+                            <FilterIcon filter={Filter.Dog} />
+                            <FilterIcon filter={Filter.Cat} />
+                            <FilterIcon filter={Filter.Other} />
                         </div>
                         <div >
                             <select className={styles.dropdown} name="cats" id="cats">

@@ -1,11 +1,11 @@
 .button {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    border-radius: 10px;
-    color: var(--black);
-    background-color: var(--yellow);
-    width: 20rem;
-    height: 3rem;
+    gap: 0.5rem;
+    width: 13rem;
+    height: 3.625rem;
+    flex-shrink: 0;
+    background-color: #FFCB7766;
+    border-radius: 15px;
+    margin-left: 2.5rem;
+    padding: 1rem 3rem;
 }
