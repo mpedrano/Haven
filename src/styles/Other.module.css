@@ -62,9 +62,9 @@
     width: 11.75rem;
     height: 3.625rem;
     flex-shrink: 0;
-    background-color: #FFCB77BF;
+    background-color: #FFCB7766;
     border-radius: 15px;
-    margin-left: 2rem;
+    margin-left: 2.5rem;
     padding: 1rem 3rem;
 }
 
@@ -72,12 +72,13 @@
     width: 11.75rem;
     height: 3.625rem;
     flex-shrink: 0;
-    margin-left: 2rem;
-    background-color: #FFCB7766;
+    background-color: #FFCB77BF;
     border-radius: 15px;
+    margin-left: 2rem;
     padding: 1rem 3rem;
 
 }
+
 
 
 

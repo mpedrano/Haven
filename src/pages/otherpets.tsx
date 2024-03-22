@@ -1,12 +1,12 @@
 // Cats.tsx
 import React, { useEffect, useState } from 'react';
-import styles from '@/styles/Cats.module.css';
-import CatPetCard from '@/components/CatPetCard';
+import styles from '@/styles/Other.module.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import axios from 'axios';
+import OtherPetCard from '@/components/OtherPetCard';
 
-export default function Cats() {
+export default function Other() {
     const [breeds, setBreeds] = useState<string[]>([]);
 
     useEffect(() => {
@@ -29,7 +29,7 @@ export default function Cats() {
             </div>
             <main className={styles.main}>
                 <div>
-                    <h1 className={styles.title}>Your Feline Friend is Awaiting</h1>
+                    <h1 className={styles.title}>Your New Best Friend is Awaiting</h1>
                     <div className={styles.filters}>
                         <div className={styles.buttons}>
                             <a href={"/"} className={styles.allDogs}>All Dogs</a>
@@ -41,7 +41,7 @@ export default function Cats() {
                 </div>
 
                 <div className={styles.petCards}>
-                    <CatPetCard />
+                    <OtherPetCard />
                 </div>
             </main>
             <div className={styles.footer}>
