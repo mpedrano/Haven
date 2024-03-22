@@ -2,8 +2,10 @@ import styles from "@/components/CatPetCard/CatPetCard.module.css";
 import Image from "next/image";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { useRouter } from 'next/router';
 
 export default function CatPetCard() {
+    const router = useRouter();
     const [cats, setCats] = useState<ICat[]>([]);
     const [accessToken, setAccessToken] = useState<string>("");
     const [selectedBreed, setSelectedBreed] = useState<string>("");
@@ -54,6 +56,10 @@ export default function CatPetCard() {
         fetchBreeds();
     }, [accessToken]);
 
+    const handleClick = (id: number) => {
+        router.push(`/${id}`);
+    }
+
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -99,7 +105,7 @@ export default function CatPetCard() {
             </div>
             <div className={styles.featuredPetsGrid}>
                 {cats.map((cat: ICat, index: number) => (
-                    <div key={index} className={`card ${styles.card} bg-white shadow-l`}>
+                    <div key={index} className={`card ${styles.card} bg-white shadow-l`} onClick={() => handleClick(cat.id)}>
                         <figure>
                             <img src={cat.photos[0].medium} alt={cat.name} />
                         </figure>

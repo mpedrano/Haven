@@ -12,7 +12,9 @@ export default function Header() {
         <>
             <main className={styles.main}>
                 <div className={styles.container}>
-                    <Image src={Logo} width={110} height={100} alt="logo" />
+                    <Link href={"/"}>
+                        <Image src={Logo} width={110} height={100} alt="logo" />
+                    </Link>
                     <div className={styles.links}>
                         <Link href={"/cats"} className={styles.animals}>animals</Link>
                         <Link href={"/faq"} className={styles.adoption}>adoption</Link>

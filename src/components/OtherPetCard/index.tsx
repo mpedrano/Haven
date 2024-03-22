@@ -2,9 +2,11 @@ import styles from "@/components/OtherPetCard/OtherPetCard.module.css";
 import Image from "next/image";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { useRouter } from 'next/router';
 
 export default function OtherPetCard() {
-    const [animals, setAnimals] = useState<ICat[]>([]);
+    const router = useRouter();
+    const [animals, setAnimals] = useState<IAnimal[]>([]);
     const [accessToken, setAccessToken] = useState<string>("");
     const [selectedBreed, setSelectedBreed] = useState<string>("");
     const [breeds, setBreeds] = useState<string[]>([]);
@@ -88,6 +90,10 @@ export default function OtherPetCard() {
         setPage(prevPage => prevPage + 1);
     };
 
+    const handleClick = (id: number) => {
+        router.push(`/${id}`);
+    }
+
     return (
         <div>
             <div className={styles.dropdown}>
@@ -100,7 +106,7 @@ export default function OtherPetCard() {
             </div>
             <div className={styles.featuredPetsGrid}>
                 {animals.map((animal: IAnimal, index: number) => (
-                    <div key={index} className={`card ${styles.card} bg-white shadow-l`}>
+                    <div key={index} className={`card ${styles.card} bg-white shadow-l`} onClick={() => handleClick(animal.id)}>
                         <figure>
                             <img src={animal.photos[0].medium} alt={animal.name} />
                         </figure>

@@ -2,8 +2,10 @@ import styles from "@/components/DogPetCard/DogPetCard.module.css"
 import Image from "next/image";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { useRouter } from 'next/router';
 
 export default function DogPetCard() {
+    const router = useRouter();
     const [dog, setDogs] = useState<IDog[]>([]);
     const [accessToken, setAccessToken] = useState<string>("");
     const apiKey = process.env.NEXT_PUBLIC_PETFINDER_API;
@@ -59,10 +61,14 @@ export default function DogPetCard() {
         fetchData();
     }, [accessToken]);
 
+    const handleClick = (id: number) => {
+        router.push(`/${id}`);
+    }
+
     return (
         <div className={styles.featuredPetsGrid}>
             {dog.map((dog: IDog, index: number) => (
-                <div key={index} className={`card ${styles.card} bg-white shadow-l`}>
+                <div key={index} className={`card ${styles.card} bg-white shadow-l`} onClick={() => handleClick(dog.id)}>
                     <figure>
                         <img src={dog.photos[0].medium} alt={dog.name} />
                     </figure>

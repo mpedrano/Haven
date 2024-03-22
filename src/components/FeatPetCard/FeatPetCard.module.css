@@ -7,6 +7,10 @@
   height: 290px;
 }
 
+.card:hover {
+  cursor: pointer;
+}
+
 .petName {
   font-size: 20px;
   font-weight: 700;
