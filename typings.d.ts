@@ -27,6 +27,7 @@ interface ICat {
 interface IAnimal {
     id: number,
     name: string;
+    description: string;
     gender: string;
     age: string;
     photos: { medium: string }[];

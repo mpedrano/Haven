@@ -76,6 +76,7 @@ export default function AnimalInfo() {
                                     <p className={styles.gender}>Gender: {data.gender}</p>
                                 </div>
                             </div>
+                            <p className={styles.description}>{data.description}</p>
                             <AdoptMeBtn />
                         </div>
                     </div>
